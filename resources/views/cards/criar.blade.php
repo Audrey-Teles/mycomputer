@@ -9,13 +9,15 @@
 
                 <form action="{{ route('salvar') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-
                     <div class="mb-4">
                         <input name="cover" type="file" class="form-control" id="inputGroupFile01" accept="image/jpeg" required>
                     </div>
-
                     <div class="mb-4">
                         <input name='nome' type="text" class="form-control" placeholder="Nome" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="customRange2" class="form-label">Avaliação do dispositivo</label>
+                        <input name='avaliacao' type="range" class="form-range" min="0" max="5" id="customRange2">
                     </div>
                     <div class="mb-4">
                         <select name="categoria" class="form-select" aria-label="Default select example" required>

@@ -19,6 +19,10 @@
                             <input name='nome' value="{{$cards->nome}}" type="text" class="form-control" placeholder="Nome" required>
                         </div>
                         <div class="mb-4">
+                            <label for="customRange2" class="form-label">Avaliação do dispositivo</label>
+                            <input name='avaliacao' type="range" class="form-range" min="0" max="5" id="customRange2">
+                        </div>
+                        <div class="mb-4">
                             <select value="{{$cards->idcategorias}}" name="categoria" class="form-select" aria-label="Default select example" required>
                                 <option selected>Escolha uma categoria</option>
                                 @foreach ($categorias as $categoria)

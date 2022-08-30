@@ -10,12 +10,13 @@
                             <div class="member-img">
                                 <img
                                     src="{{asset("storage/cards_cover/$card->idcards.jpg")}}"
-                                    class="img-fluid" alt="">
+                                    class="img-fluid align" alt="">
                                 <div class="social">
                                     <a href="{{route("editar", $card->idcards)}}"><i
                                             class="card-icon bi bi-pencil-square"></i></a>
                                 </div>
                             </div>
+
                             <div class="member-info">
                                 <h4>{{$card->nome}}</h4>
                                 <span>  </span>

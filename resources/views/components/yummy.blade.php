@@ -114,10 +114,10 @@
                 <div class="col-lg-3 col-md-6 d-flex">
                     <i class="bi bi-geo-alt icon"></i>
                     <div>
-                        <h4>Address</h4>
+                        <h4>Links úteis</h4>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022 - US<br>
+                        </p>
+                        <p>
                         </p>
                     </div>
 
@@ -146,12 +146,13 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Follow Us</h4>
+                    <h4>Siga o desenvolvedor</h4>
                     <div class="social-links d-flex">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Audrey-Teles" class="github"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/audrey_teles/" class="instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/audreyteles/" class="linkedin"><i
+                                class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -175,5 +176,16 @@
 
 </footer><!-- End Footer -->
 <!-- End Footer -->
+
+<!-- Vendor JS Files -->
+<script src={{asset("import/assets/vendor/bootstrap/js/bootstrap.bundle.min.js") }}></script>
+<script src={{asset("import/assets/vendor/aos/aos.js") }}></script>
+<script src={{asset("import/assets/vendor/glightbox/js/glightbox.min.js") }}></script>
+<script src={{asset("import/assets/vendor/purecounter/purecounter_vanilla.js") }}></script>
+<script src={{asset("import/assets/vendor/swiper/swiper-bundle.min.js") }}></script>
+<script src={{asset("import/assets/vendor/php-email-form/validate.js")}}></script>
+<!-- Template Main JS File -->
+<script src={{asset("import/assets/js/main.js")}}></script>
+
 </body>
 </html>

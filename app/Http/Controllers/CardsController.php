@@ -56,16 +56,12 @@ class CardsController extends Controller
      */
     public function store(Request $request)
     {
-
-        $nome = $request->nome;
-        $categoria = $request->categoria;
-        $comentario = $request->comentario;
-
         $card = new card();
 
-        $card->nome = $nome;
-        $card->idcategorias = $categoria;
-        $card->comentario = $comentario;
+        $card->nome = $request->nome;
+        $card->idcategorias = $request->categoria;
+        $card->avaliacao = $request->avaliacao;
+        $card->comentario = $request->comentario;
         $card->idusers = Auth::user()->id;
 
         $card->save();
@@ -114,9 +110,12 @@ class CardsController extends Controller
 
         $card->nome = $request->nome;
         $card->idcategorias = $request->categoria;
+        $card->avaliacao = $request->avaliacao;
         $card->comentario = $request->comentario;
 
-        $request->file('cover')->storeAs('cards_cover', $card['idcards'] . '.jpg', 'public');
+        if ($request->hasFile('cover')) {
+            $request->file('cover')->storeAs('cards_cover', $card['idcards'] . '.jpg', 'public');
+        }
 
         $card->save();
 
